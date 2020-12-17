@@ -1,0 +1,22 @@
+version: "2"
+services:
+  frontend:
+    build: ./frontend
+    volumes:
+        - ./frontend:/app
+    networks:
+      - default
+    ports:
+      - 8080:3000
+  backend:
+    build: ./backend
+    volumes:
+        - ./backend:/app
+    networks:
+      - default
+    ports:
+      - 3000:3000
+
+networks:
+    default:
+      driver: bridge

@@ -1,0 +1,12 @@
+{
+    "name": "open_escape",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "~4.17.0",
+        "express-clean-routes": "0.1.0"
+    }
+}
